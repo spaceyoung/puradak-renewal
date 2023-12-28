@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+/**********
+main - S
+***********/
+/* main-common - S */
+.article{padding: 200px 0;}
+/* main-common - E */
+
+/* intro - S */
+.intro{
+    width: 100%; height: 600px;
+    background: linear-gradient( 90deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0) ), url(/puradak-renewal/img/sub01-01-intro.jpg) no-repeat center / cover;
+    position: relative;
+    transition: all .3s;
+}
+.intro .sub-con-header .sub-con-tit,
+.intro .sub-con-header .sub-con-desc{color: #fff;}
+/* intro - E */
+
+/* keyword - S */
+.keyword .sub-con-header{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.keyword .keyword-list{
+    display: flex; justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    transition: all .3s;
+}
+.keyword .keyword-item{
+    width: 27%;
+    text-align: center;
+    position: relative;
+    transition: all .3s;
+}
+.keyword .keyword-item::before{content: "";
+    display: block;
+    width: 100%;
+    margin-bottom: 30px; padding-bottom: 100%;
+    background-repeat: no-repeat; background-position: center; background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%);
+    transition: all .3s;
+}
+.keyword .keyword-item:nth-child(1)::before{background-image: url(/puradak-renewal/img/sub01-01-keyword01-b.jpg);}
+.keyword .keyword-item:nth-child(2)::before{background-image: url(/puradak-renewal/img/sub01-01-keyword02-b.jpg);}
+.keyword .keyword-item:nth-child(3)::before{background-image: url(/puradak-renewal/img/sub01-01-keyword03-b.jpg);}
+.keyword .keyword-item::after{content: "";
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #221e1f;
+    position: absolute; left: 15px; top: -15px; z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%);
+    transition: all .3s;
+}
+.keyword .keyword-item .keyword-tit{
+    margin-bottom: 10px;
+    font: 400 2.4rem / 1.6 'PuradakGentleGothicR', Roboto, "돋움", dotum, AppleGothic, sans-serif; letter-spacing: -1.5px; color: #bc955c;
+    transition: all .3s;
+}
+.keyword .keyword-item .keyword-desc{font-size: 1.7rem;}
+/* keyword - E */
+
+/* recipe - S */
+.recipe{
+    width: 100%; height: 800px;
+    background: linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .4) ), url(/puradak-renewal/img/sub01-01-recipe.jpg) no-repeat center / cover;
+    transition: all .3s;
+}
+.recipe .sub-con-header{width: 700px;}
+.recipe .sub-con-header .sub-con-tit{
+    margin-bottom: 40px;
+    color: #fff;
+}
+.recipe .sub-con-header .sub-con-subtit{color: rgba(255, 255, 255, .95);}
+.recipe .sub-con-header .sub-con-desc{color: rgba(255, 255, 255, .85);}
+.recipe .sub-con-header p:nth-of-type(2){margin-bottom: 26px;}
+/* recipe - E */
+
+/* concept - S */
+.concept .sub-con-header{
+    margin-bottom: 85px;
+    text-align: center;
+    transition: all .3s;
+}
+.concept .concept-list{
+    display: flex; justify-content: center; align-items: center; gap: 10%;
+    margin-bottom: 15px;
+    transition: all .3s;
+}
+.concept .concept-item .concept-img img{
+    height: 380px;
+    transition: all .3s;
+}
+.concept .concept-txt{
+    display: block;
+    font-weight: 500; font-size: 1.7rem; text-align: center; color: #333;
+    transition: all .3s;
+}
+/* concept - E */
+
+/* mood - S */
+.mood{background: url(/puradak-renewal/img/sub01-01-mood-bg.jpg) no-repeat center / cover;}
+.mood .inner{display: flex; justify-content: space-between; align-items: center;}
+.mood .sub-con-header{width: 40%;}
+.mood .sub-con-header .sub-con-tit{color: #fff;}
+.mood .sub-con-header .sub-con-desc{color: rgba(255, 255, 255, .85)}
+.mood .swiper-container{
+    order: -1;
+    width: 50%;
+    transition: all .3s;
+}
+.mood .moodSwiper .swiper-slide{
+    width: 100%; height: 450px;
+    transition: all .3s;
+}
+.mood .moodSwiper .mood-img{
+    display: flex; justify-content: center; align-items: center;
+    width: 100%; height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 85%);
+    transition: all .3s;
+}
+.mood .moodSwiper .mood-img img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: all .3s;
+}
+/* mood - E */
+
+/* outro - S */
+.outro{padding-bottom: 100px;}
+.outro .sub-con-header{text-align: center;}
+.outro .sub-con-header::before{content: "";
+    display: block;
+    width: 1px; height: 30px;
+    margin: 0 auto 40px auto;
+    background-color: #111;
+}
+.outro .sub-con-header .sub-con-tit{margin-bottom: 0;}
+/* outro - E */
+/**********
+main - E
+***********/
+
+
+/********************
+max-width: 1280px
+*********************/
+@media all and ( max-width: 1280px ){
+    /**********
+    main - S
+    ***********/
+    /* main-common - S */
+    .article{padding: 180px 0;}
+    /* main-common - E */
+
+    /* intro - S */
+    .intro .sub-con-header{width: 55%;}
+    .intro .sub-con-header .sub-con-desc span{display: inline;}
+    .intro .sub-con-header .sub-con-desc span::after{content: " ";
+        display: inline;
+    }
+    /* intro - E */
+
+    /* keyword - S */
+    .keyword .sub-con-header{margin-bottom: 95px;}
+    .keyword .keyword-list{width: 92%;}
+    .keyword .keyword-item::after{left: 10px; top: -10px;}
+    .keyword .keyword-item .keyword-desc{font-size: 1.6rem;}
+    /* keyword - E */
+
+    /* recipe - S */
+    .recipe{height: 750px;}
+    .recipe .sub-con-header{width: 60%; min-width: 500px;}
+    /* recipe - E */
+
+    /* concept - S */
+    .concept .sub-con-header{margin-bottom: 80px;}
+    .concept .concept-item .concept-img img{height: 350px;}
+    /* concept - E */
+
+    /* mood - S */
+    .mood .moodSwiper .swiper-slide{height: 400px;}
+    /* mood - E */
+
+    /* outro - S */
+    .outro {padding-bottom: 90px;}
+    /* outro - E */
+    /**********
+    main - E
+    ***********/
+}
+
+
+/********************
+max-width: 1024px
+*********************/
+@media all and ( max-width: 1024px ){
+    /**********
+    main - S
+    ***********/
+    /* main-common - S */
+    .article{padding: 170px 0;}
+    /* main-common - E */
+
+    /* intro - S */
+    .intro{height: 550px;}
+    .intro .sub-con-header{width: 66%;}
+    /* intro - E */
+
+    /* keyword - S */
+    .keyword .sub-con-header{margin-bottom: 85px;}
+    .keyword .keyword-list{width: 100%;}
+    .keyword .keyword-item{width: 28%;}
+    .keyword .keyword-item::before{margin-bottom: 25px;}
+    .keyword .keyword-item .keyword-tit{font-size: 2.2rem;}
+    /* keyword - E */
+
+    /* recipe - S */
+    .recipe{height: 700px;}
+    .recipe .sub-con-header{width: 60%;}
+    .recipe .sub-con-header .sub-con-tit{margin-bottom: 35px;}
+    .recipe .sub-con-header p:nth-of-type(2){margin-bottom: 24px;}
+    /* recipe - E */
+
+    /* concept - S */
+    .concept .sub-con-header{margin-bottom: 75px;}
+    .concept .concept-list{justify-content: space-around; gap: 0;}
+    .concept .concept-item .concept-img img{height: 280px;}
+    .concept .concept-txt{font-size: 1.6rem;}
+    /* concept - E */
+
+    /* mood - S */
+    .mood .moodSwiper .swiper-slide{height: 350px;}
+    /* mood - E */
+
+    /* outro - S */
+    .outro {padding-bottom: 85px;}
+    /* outro - E */
+    /**********
+    main - E
+    ***********/
+}
+
+
+/********************
+max-width: 768px
+*********************/
+@media all and ( max-width: 768px ){
+    /**********
+    main - S
+    ***********/
+    /* main-common - S */
+    .article{padding: 160px 0;}
+    /* main-common - E */
+
+    /* intro - S */
+    .intro{
+        height: 500px;
+        background-image: linear-gradient( 90deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .3) ), url(/puradak-renewal/img/sub01-01-intro.jpg);
+    }
+    .intro .sub-con-header{width: 75%;}
+    /* intro - E */
+
+    /* keyword - S */
+    .keyword .sub-con-header{margin-bottom: 80px;}
+    .keyword .keyword-list{
+        flex-direction: column; gap: 100px;
+        position: relative;
+    }
+    .keyword .keyword-item{width: 45%;}
+    .keyword .keyword-item:nth-child(2){position: absolute; right: 0; top: 25%;}
+    .keyword .keyword-item .keyword-tit{font-size: 2.1rem;}
+    .keyword .keyword-item .keyword-desc{font-size: 1.5rem;}
+    /* keyword - E */
+
+    /* recipe - S */
+    .recipe{height: auto;}
+    .recipe .sub-con-header{width: 100%; min-width: 0;}
+    .recipe .sub-con-header .sub-con-tit{margin-bottom: 30px;}
+    .recipe .sub-con-header p:nth-of-type(2){margin-bottom: 24px;}
+    /* recipe - E */
+
+    /* concept - S */
+    .concept .sub-con-header{margin-bottom: 70px;}
+    .concept .concept-list{margin-bottom: 15px;}
+    .concept .concept-item .concept-img img{height: 240px;}
+    .concept .concept-txt{font-size: 1.5rem;}
+    /* concept - E */
+
+    /* mood - S */
+    .mood .inner{flex-direction: column; gap: 40px;}
+    .mood .sub-con-header,
+    .mood .swiper-container{width: 90%;}
+    /* mood - E */
+
+    /* outro - S */
+    .outro {padding-bottom: 80px;}
+    /* outro - E */
+    /**********
+    main - E
+    ***********/
+}
+
+
+/********************
+max-width: 640px
+*********************/
+@media all and ( max-width: 640px ){
+    /**********
+    main - S
+    ***********/
+    /* main-common - S */
+    .article{padding: 140px 0;}
+    /* main-common - E */
+
+    /* intro - S */
+    .intro{
+        height: auto;
+        background-image: linear-gradient( 90deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .5) ), url(/puradak-renewal/img/sub01-01-intro.jpg);
+    }
+    .intro .sub-con-header{width: 100%;}
+    /* intro - E */
+
+    /* keyword - S */
+    .keyword .sub-con-header{margin-bottom: 75px;}
+    .keyword .keyword-list{gap: 80px;}
+    .keyword .keyword-item{width: 46%;}
+    .keyword .keyword-item .keyword-tit{font-size: 2rem;}
+    /* keyword - E */
+
+    /* concept - S */
+    .concept .sub-con-header{margin-bottom: 65px;}
+    .concept .concept-list{flex-direction: column; gap: 20px;}
+    .concept .concept-item .concept-img img{height: 280px}
+    /* concept - E */
+
+    /* mood - S */
+    .mood .sub-con-header,
+    .mood .swiper-container{width: 100%;}
+    /* mood - E */
+
+    /* outro - S */
+    .outro {padding-bottom: 70px;}
+    /* outro - E */
+    /**********
+    main - E
+    ***********/
+}
+
+
+/********************
+max-width: 480px
+*********************/
+@media all and ( max-width: 480px ){
+    /**********
+    main - S
+    ***********/
+    /* main-common - S */
+    .article{padding: 120px 0;}
+    /* main-common - E */
+
+    /* keyword - S */
+    .keyword .sub-con-header{margin-bottom: 70px;}
+    .keyword .keyword-list{
+        flex-direction: column; align-items: center;
+        position: static;
+    }
+    .keyword .keyword-item{width: 80%;}
+    .keyword .keyword-item:nth-child(2){position: relative;}
+    /* keyword - E */
+
+    /* concept - S */
+    .concept .sub-con-header{margin-bottom: 60px;}
+    .concept .concept-item .concept-img img{height: 240px}
+    .concept .concept-txt{font-size: 1.4rem;}
+    /* concept - E */
+
+    /* mood - S */
+    .mood .moodSwiper .swiper-slide{height: 250px;}
+    /* mood - E */
+
+    /* outro - S */
+    .outro {padding-bottom: 60px;}
+    /* outro - E */
+    /**********
+    main - E
+    ***********/
+}

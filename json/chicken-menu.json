@@ -1,0 +1,163 @@
+{
+  "bone" : [
+    {
+      "name" : "김미바삭",
+      "engname" : "GIMME BASAK CHICKEN",
+      "price" : "19,900원",
+      "spicy" : {
+        "level" : 0,
+        "caption" : null
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-gimme.png",
+      "desc" : "한국인이라면 모를 수 없는 김의 단짠고소함과 김부각의 바삭함이 치킨을 만나 '한식, 치킨이 되다.'",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "우유", "대두", "밀", "쇠고기"]
+    },
+    {
+      "name" : "블랙알리오",
+      "engname" : "BLACK AGLIO CHICKEN",
+      "price" : "19,900원",
+      "spicy" : {
+        "level" : 0,
+        "caption" : null
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-blackaglio.png",
+      "desc" : "깊고 진한 간장과 고소하면서 담백한 마늘의 만남. 치킨을 넘어 진정한 요리를 느낄 수 있는 대표 메뉴.",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "우유", "대두", "밀", "쇠고기", "조개류"]
+    },
+    {
+      "name" : "고추마요",
+      "engname" : "CHILI MAYONNAISE CHICKEN",
+      "price" : "19,900원",
+      "spicy" : {
+        "level" : 1,
+        "caption" : "약간 매운맛"
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-chilimayo.png",
+      "desc" : "계속 손이 갈 수밖에 없는 치킨. 맵다, 부드럽다, 고소하다, 달콤하다, 새콤하다. 환상적인 맛의 조합.",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "계란", "우유", "대두", "밀", "쇠고기"]
+    },
+    {
+      "name" : "마불로 악마",
+      "engname" : "MABULRO DEVIL CHICKEN",
+      "price" : "20,900원",
+      "spicy" : {
+        "level" : 3,
+        "caption" : "아주 매운맛"
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-mabulrodevil.png",
+      "desc" : "맛있게, 새롭게 맵단! (마)늘과 (불)맛으(로) 업그레이드된, 파, 마늘 더블 후레이크로 꽉-찬 매운맛.",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "우유", "대두", "밀", "쇠고기", "토마토"]
+    },
+    {
+      "name" : "바질페스타",
+      "engname" : "BASIL FESTA CHICKEN",
+      "price" : "20,900원",
+      "spicy" : {
+        "level" : 0,
+        "caption" : null
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-basilfesta.png",
+      "desc" : "바질페스타가 선사하는 치킨 다이닝! 특제 바질페스토 소스와 로스트 마리네이드 토마토, 파마산 치즈의 조화.",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "계란", "우유", "대두", "밀", "쇠고기", "토마토", "캐슈넛"]
+    },
+    {
+      "name" : "콘소메이징",
+      "engname" : "CORN - SO AMAZING CHICKEN",
+      "price" : "19,900원",
+      "spicy" : {
+        "level" : 0,
+        "caption" : null
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-cornsomazing.png",
+      "desc" : "단짠단짠 콘소메 시즈닝에 바삭한 옥수수 후레이크와 쫄깃한 리얼 군옥수수 토핑.",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "우유", "대두", "밀", "쇠고기"]
+    },
+    {
+      "name" : "투움바",
+      "engname" : "TOOWOOMBA CHICKEN",
+      "price" : "20,900원",
+      "spicy" : {
+        "level" : 2,
+        "caption" : "매운맛"
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-toowoomba.png",
+      "desc" : "고소한 크림소스에 매콤함을 더해 완성된 맛. 부드럽게 매콤한 투움바 풍미, 로제 빛 비주얼, 쫄깃한 떡 사리.",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "우유", "대두", "밀", "쇠고기", "토마토"]
+    },
+    {
+      "name" : "제너럴 핫",
+      "engname" : "GENERAL HOT CHICKEN",
+      "price" : "19,900원",
+      "spicy" : {
+        "level" : 2,
+        "caption" : "매운맛"
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-generalhot.png",
+      "desc" : "푸라닭 스타일로 재탄생한 미국식 퓨전 깐풍 소스와 치킨의 결합. 매콤한 소스와 마늘의 풍미가 이루는 조화.",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "우유", "대두", "밀", "돼지고기", "쇠고기", "조개류"]
+    },
+    {
+      "name" : "매드갈릭",
+      "engname" : "MAD GARLIC CHICKEN",
+      "price" : "19,900원",
+      "spicy" : {
+        "level" : 0,
+        "caption" : null
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-madgarlic.png",
+      "desc" : "깊은 마늘 향, 알싸한 마늘과 바삭한 마늘크러쉬드의 환상적 조합. 기존 마늘 치킨의 업그레이드 버전.",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "우유", "대두", "밀", "쇠고기", "아황산류", "조개류"]
+    },
+    {
+      "name" : "파불로",
+      "engname" : "PABULRO CHICKEN",
+      "price" : "19,900원",
+      "spicy" : {
+        "level" : 0,
+        "caption" : null
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-pabulro.png",
+      "desc" : "불고기의 진한 맛과 아삭한 파가 선사하는 하모니, 파 불고기 치킨.",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "우유", "대두", "밀", "쇠고기", "토마토", "조개류", "참깨"]
+    },
+    {
+      "name" : "달콤양념",
+      "engname" : "SWEET CHICKEN",
+      "price" : "19,900원",
+      "spicy" : {
+        "level" : 0,
+        "caption" : null
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-sweet.png",
+      "desc" : "푸라닭만의 양념으로 깔끔하고 달콤한 맛이 매력적인 중독성 강한 양념치킨.",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "우유", "땅콩", "대두", "밀", "쇠고기", "토마토"]
+    },
+    {
+      "name" : "씬 후라이드",
+      "engname" : "THE FRIED CHICKEN",
+      "price" : "17,900원",
+      "spicy" : {
+        "level" : 0,
+        "caption" : null
+      },
+      "img" : "/puradak-renewal/img/menu/chicken/bone-thin.png",
+      "desc" : "가장 얇고 담백한 튀김옷의 씬(Thin) 후라이드.",
+      "option" : ["매장", "포장", "배달"],
+      "allergy" : ["닭고기", "우유", "대두", "밀", "새우", "쇠고기", "아황산류"]
+    }
+  ],
+  "boneless" : [
+
+  ]
+}
