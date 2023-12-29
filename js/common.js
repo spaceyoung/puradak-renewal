@@ -7,6 +7,7 @@ gnb.addEventListener("mouseover", () => {
   header.classList.add("on");
   logo.src = "/puradak-renewal/img/logo-k.png";
 });
+
 header.addEventListener("mouseout", () => {
   header.classList.remove("on");
   logo.src = "/puradak-renewal/img/logo.png";
@@ -14,56 +15,62 @@ header.addEventListener("mouseout", () => {
 
 
 // 올메뉴 햄버거 버튼
-const allMenuOpen = document.querySelector(".allmenu-btn");
+const allMenuOpenBtn = document.querySelector(".allmenu-btn");
 const allMenuContainer = document.querySelector(".allmenu-container");
-const allMenuClose = document.querySelector(".allmenu-close-btn");
-const allMenuBoxs = document.querySelectorAll(".allmenu-depth1 > div");
+const allMenuCloseBtn = document.querySelector(".allmenu-close-btn");
+const allMenuHeaders = document.querySelectorAll(".allmenu-depth1-header");
 
-allMenuOpen.addEventListener("click", () => {
-  allMenuContainer.classList.add("on");
+allMenuOpenBtn.addEventListener("click", () => {
   document.documentElement.classList.add("hidden");
+  allMenuContainer.classList.add("on");
 });
-allMenuClose.addEventListener('click', () => {
-  allMenuContainer.classList.remove('on');
+
+allMenuCloseBtn.addEventListener('click', () => {
   document.documentElement.classList.remove('hidden');
-  for (const allMenuBox of allMenuBoxs) {
-    allMenuBox.classList.remove('open');
-    allMenuBox.nextElementSibling.style.maxHeight = null;
+  allMenuContainer.classList.remove('on');
+  for (const allMenuHeader of allMenuHeaders) {
+    allMenuHeader.classList.remove('on');
+    allMenuHeader.nextElementSibling.style.maxHeight = null;
   }
 });
 
 
-// 올메뉴 아코디언
-function accordionToggle(content) {
-  if (!content.classList.contains('open')) {
-    for (const allMenuBox of allMenuBoxs) {
-      allMenuBox.classList.remove('open');
-      allMenuBox.nextElementSibling.style.maxHeight = null;
+// 모바일 화면 올메뉴 아코디언 메뉴 토글
+function accordionToggle(allMenuHeader) {
+  if (!allMenuHeader.classList.contains('on')) {
+    for (const allMenuHeader of allMenuHeaders) {
+      allMenuHeader.classList.remove('on');
+      allMenuHeader.nextElementSibling.style.maxHeight = null;
     }
-    content.classList.add('open');
-    content.nextElementSibling.style.maxHeight = `${content.nextElementSibling.scrollHeight}px`;
+    allMenuHeader.classList.add('on');
+    allMenuHeader.nextElementSibling.style.maxHeight = `${allMenuHeader.nextElementSibling.scrollHeight}px`;
   } else {
-    content.classList.remove('open');
-    content.nextElementSibling.style.maxHeight = null;
+    allMenuHeader.classList.remove('on');
+    allMenuHeader.nextElementSibling.style.maxHeight = null;
   };
 };
 
 window.addEventListener('resize', () => {
   if (window.innerWidth <= 640) {
-    for (const allMenuBox of allMenuBoxs) {
-      allMenuBox.addEventListener('click', (e) => {
+    for (const allMenuHeader of allMenuHeaders) {
+      allMenuHeader.addEventListener('click', (e) => {
         e.preventDefault();
-        accordionToggle(allMenuBox);
+        accordionToggle(allMenuHeader);
       });
+    };
+  } else {
+    for (const allMenuHeader of allMenuHeaders) {
+      allMenuHeader.classList.remove('on');
+      allMenuHeader.nextElementSibling.style.maxHeight = null;
     };
   };
 });
 
 if (window.innerWidth <= 640) {
-  for (const allMenuBox of allMenuBoxs) {
-    allMenuBox.addEventListener('click', (e) => {
+  for (const allMenuHeader of allMenuHeaders) {
+    allMenuHeader.addEventListener('click', (e) => {
       e.preventDefault();
-      accordionToggle(allMenuBox);
+      accordionToggle(allMenuHeader);
     });
   };
 };

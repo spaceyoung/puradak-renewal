@@ -190,8 +190,8 @@ header - S
     transition: all .2s;
 }
 .util .allmenu .allmenu-depth1 + .allmenu-depth1{border-left: 1px solid #bc955c;}
-.util .allmenu .allmenu-depth1 div{display: flex; justify-content: space-between; align-items: center;}
-.util .allmenu .allmenu-depth1 div a{
+.util .allmenu .allmenu-depth1 .allmenu-depth1-header{display: flex; justify-content: space-between; align-items: center;}
+.util .allmenu .allmenu-depth1 .allmenu-depth1-header a{
     display: block;
     font-weight: 700; font-size: 2.8rem; color: #111;
     transition: all .2s;
@@ -226,7 +226,7 @@ header - S
 .util .allmenu .allmenu-btn:hover::after,
 .util .allmenu .allmenu-btn:hover span{background-color: #bc955c;}
 .util .allmenu .allmenu-btn:hover::after{transform: scaleX(1);}
-.util .allmenu .allmenu-depth1:hover div a,
+.util .allmenu .allmenu-depth1:hover .allmenu-depth1-header a,
 .util .allmenu .allmenu-depth2 li a:hover,
 .util .allmenu .allmenu-close-btn:hover span{color: #bc955c;}
 /* util - E */
@@ -357,7 +357,7 @@ max-width: 1280px
         line-height: 50px; text-align: left;
     }
     .util .allmenu .allmenu-depth1 + .allmenu-depth1{border-top: 1px solid #bc955c; border-left: none;}
-    .util .allmenu .allmenu-depth1 div{width: calc( ( 100% - 50px ) * 0.25 );}
+    .util .allmenu .allmenu-depth1 .allmenu-depth1-header{width: calc( ( 100% - 50px ) * 0.25 );}
     .util .allmenu .allmenu-depth2{
         display: flex; flex-wrap: wrap;
         width: calc( ( 100% - 50px ) * 0.75 );
@@ -424,8 +424,8 @@ max-width: 768px
         padding: 20px 15px;
         line-height: 45px;
     }
-    .util .allmenu .allmenu-depth1 div{width: calc( ( 100% - 50px ) * 0.28 );}
-    .util .allmenu .allmenu-depth1 div a{font-size: 2.4rem;}
+    .util .allmenu .allmenu-depth1 .allmenu-depth1-header{width: calc( ( 100% - 50px ) * 0.28 );}
+    .util .allmenu .allmenu-depth1 .allmenu-depth1-header a{font-size: 2.4rem;}
     .util .allmenu .allmenu-depth2{width: calc( ( 100% - 50px ) * 0.72 );}
     .util .allmenu .allmenu-depth2 li{height: 45px;}
     .util .allmenu .allmenu-depth2 li a{font-size: 1.6rem;}
@@ -511,8 +511,8 @@ max-width: 640px
         line-height: 40px;
         cursor: pointer;
     }
-    .util .allmenu .allmenu-depth1 div{width: 100%;}
-    .util .allmenu .allmenu-depth1 div a{font-size: 2.2rem;}
+    .util .allmenu .allmenu-depth1 .allmenu-depth1-header{width: 100%;}
+    .util .allmenu .allmenu-depth1 .allmenu-depth1-header a{font-size: 2.2rem;}
     .util .allmenu .allmenu-depth1 .allmenu-expand-btn{display: block;}
     .util .allmenu .allmenu-depth2{
         width: 100%; max-height: 0;
@@ -524,13 +524,13 @@ max-width: 640px
         text-indent: 5px;
     }
     .util .allmenu .allmenu-close-btn{right: 20px;}
-    .util .allmenu .allmenu-depth1 div.open .allmenu-expand-btn{transform: rotate(180deg);}
-    .util .allmenu .allmenu-depth1 div.open + .allmenu-depth2{margin-top: 15px;}
+    .util .allmenu .allmenu-depth1 .allmenu-depth1-header.on .allmenu-expand-btn{transform: rotate(180deg);}
+    .util .allmenu .allmenu-depth1 .allmenu-depth1-header.on + .allmenu-depth2{margin-top: 15px;}
     .util .allmenu .allmenu-util .allmenu-member li:hover,
     .util .allmenu .allmenu-util .allmenu-global:hover{color: #bc955c;}
-    .util .allmenu .allmenu-depth1 div:hover a,
-    .util .allmenu .allmenu-depth1 div.open a,
-    .util .allmenu .allmenu-depth1 div:hover .allmenu-expand-btn span{color: #bc955c;}
+    .util .allmenu .allmenu-depth1 .allmenu-depth1-header:hover a,
+    .util .allmenu .allmenu-depth1 .allmenu-depth1-header.on a,
+    .util .allmenu .allmenu-depth1 .allmenu-depth1-header:hover .allmenu-expand-btn span{color: #bc955c;}
     /* util - E */
     /**********
     header - E

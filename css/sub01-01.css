@@ -43,9 +43,9 @@ main - S
     clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%);
     transition: all .3s;
 }
-.keyword .keyword-item:nth-child(1)::before{background-image: url(/puradak-renewal/img/sub01-01-keyword01-b.jpg);}
-.keyword .keyword-item:nth-child(2)::before{background-image: url(/puradak-renewal/img/sub01-01-keyword02-b.jpg);}
-.keyword .keyword-item:nth-child(3)::before{background-image: url(/puradak-renewal/img/sub01-01-keyword03-b.jpg);}
+.keyword .keyword-item:nth-child(1)::before{background-image: url(/puradak-renewal/img/sub01-01-keyword01.jpg);}
+.keyword .keyword-item:nth-child(2)::before{background-image: url(/puradak-renewal/img/sub01-01-keyword02.jpg);}
+.keyword .keyword-item:nth-child(3)::before{background-image: url(/puradak-renewal/img/sub01-01-keyword03.jpg);}
 .keyword .keyword-item::after{content: "";
     width: 100%;
     padding-bottom: 100%;
